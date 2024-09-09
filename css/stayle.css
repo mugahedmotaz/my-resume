@@ -1,0 +1,357 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap'); */
+
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #ffffff;
+    --text-color: #000000;
+    --seconed-color: #d13639;
+    --theard-color: #282828;
+    --background-color: #fffff1;
+    --box-shadow: rgba(0, 0, 0, 0.1)0px 5px 10px -3px;
+    ;
+    --border-radius: 5px;
+    --padding-top: 100px;
+    --padding-bottom: 100px;
+    --transation: 0.7s;
+}
+
+.page {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+    font-weight: bold;
+}
+
+.main-title {
+    padding-right: 100px;
+    margin: 50px 0;
+
+}
+
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #fffff1;
+    box-shadow: 0px -6px 9px black;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.linkes ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkes ul li {
+    padding-left: 40px;
+}
+
+/* Start landing style */
+.landing {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+}
+
+.landing .title {
+    margin-bottom: 20px;
+}
+
+.landing .landing-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-more {
+    background-color: #fffff1;
+    margin-top: 20px;
+    padding: 10px 5px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px 0;
+
+}
+
+/* Start timeline */
+.timeline {
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.timeline .container {
+    border-right: 3px solid black;
+    margin-top: 50px;
+}
+
+.timeline .box {
+    border-radius: 5px;
+    position: relative;
+    width: 90%;
+    /* box-shadow: var(--box-shadow); */
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.timeline p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.timeline .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 50%;
+    left: calc(100% + 92px);
+
+}
+
+/*  Start Certifacte */
+.certfacite {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.certfacite .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.certfacite .box {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.certfacite .box img {
+    height: 100px;
+    padding: 20px 0;
+    max-width: 100%;
+}
+
+/* Start skills */
+.skills {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.skill {
+    padding-top: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.skill-bar {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    height: 14px;
+    border-radius: 3px;
+}
+
+.skill-ber {
+    background-color: black;
+    height: 14px;
+    position: relative;
+    color: #ffffff;
+}
+
+.skill-ber::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: var(--text-color);
+    border-radius: 4px;
+    top: -40px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-ber::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--text-color);
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+}
+
+@media (max-width:767px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .linkes ul {
+        display: none;
+    }
+
+    .header .logo {
+        margin: auto;
+        font-size: 28px;
+    }
+}
+
+.contact {
+    padding-bottom: 100px;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    align-items: center;
+}
+
+.contact .location-side {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact .location-side h3 {
+    padding: 10px 0 0 0;
+}
+
+.contact .email-side input,
+textarea {
+
+    border: none;
+    border: 1px solid #000000;
+    opacity: 90%;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+
+.contact .email-side h3 {
+    margin: 10px 0;
+
+}
+
+.contact .email-side input[type=email] {
+    direction: ltr;
+    width: 100%;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.contact .email-side textarea {
+    outline: none;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    resize: none;
+    font-weight: bold;
+}
+
+.contact .email-side input[type=submit] {
+    margin: 20px 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+
+}
+
+.footer {
+    padding: 100px 0;
+}
+
+.footer .logo {
+    text-align: center;
+}
+
+.footer .social {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .social i {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer span {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    padding-top: 10px;
+    letter-spacing: -0.5px;
+}
+
+@media (min-width:767px) {
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .timeline {
+        padding-right: 20px;
+    }
+
+    .timeline .box::before {
+        left: calc(100% + 22px);
+    }
+
+    .main-title {
+        padding-right: 20px;
+    }
+
+    .contact .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 40px;
+    }
+}
