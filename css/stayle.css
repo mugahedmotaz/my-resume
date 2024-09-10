@@ -157,6 +157,8 @@ a {
 
 .certfacite .box img  {
     height: 100px;
+    padding: 20px 0;
+    max-width: 100%;
   
 }
 .projects .project-box img { 
