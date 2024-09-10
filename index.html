@@ -49,8 +49,7 @@
                 </div>
                     <!-- Start landinng page -->
                     <div class="landing" id="home">
-                        <div class="container">
-                            
+                        <div class="container">                 
                             <h1 class="title">مرحباً بكم </h1>
                             <p class="landing-text">
                                 مجاهد معتز الجيلي مطور ويب مبتدي احاول التعلم كل يوم  واحب انشاء برامج الكترونيه لحل المشكلات
@@ -83,7 +82,7 @@
                         <h1 class="main-title">الشـهادات</h1>
                         <div class="container">
                             <div class="box">
-                                <img src="./assets/images/google-1-1.svg" alt="">
+                                <img src="./assets/images//7123025_logo_google_g_icon.png" alt="">
                                 <h2 class="title">شهاده قوقل في تقنيه المعلومات</h2>
                                 <p>Google LLC</p>
                                 <p>2023</p>
@@ -119,10 +118,11 @@
                         </ul>
                         <div class="container">
                             <div class="project-box mobile" >        
-                                <img src="./assets/images/Lost.jpg" alt="">
-                                <h2 class="title"> Lost App  </h2>
+                                <img src="./assets/images/F99A4C79-27EB-4279-B4B5-7630287AE3C2.png" alt="">
+                                <h2 class="title"> LOST</h2>
                                 <p><i class="fa fa-diagram-project"></i> تطبيق موبايل </p>
                                 <p><i class="fa fa-clock"></i> قيد التنفيذ</p>
+                                <button  onclick="aboutProject()">معلومات عن المشروع</button>
                             </div>
                             </div>
                             </div>
@@ -231,6 +231,14 @@
                         }
                     })
                 })
+            </script>
+            <script type="text/javascript">
+                function aboutProject () {
+                    Swal.fire({
+                        title:"معلومات عن المشروع",
+                        text: "تطبيق لوست هو تطبيق تطبيق لبلاغات المفقودات ",
+                      });
+                }
             </script>
             <script src="https://smtpjs.com/v3/smtp.js"></script>
             <script src="./js/sendEmail.js"></script>

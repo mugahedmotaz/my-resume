@@ -164,6 +164,7 @@ a {
 .projects .project-box img { 
     padding: 20px 0;
     max-width: 100%;
+    
 }
 .project-filter {
     display: flex;
@@ -182,17 +183,26 @@ a {
     user-select: none;
 }
 .project-filter-active {
-    border: 0.1px solid black;
+    border: 1px solid black;
     background-color: #fffff1;
     border-radius: 6px;
 }
 .project-box i {
-    font-weight:600;
+    margin-top: 10px;
+    border: 1px soild #000000;
     background-color: #fffff1;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
 }
+.project-box button {
+    padding: 5px 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-color: #fffff1;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 @media (max-width:767px) {
     .project-filter li {
 padding: 5px 10px;
