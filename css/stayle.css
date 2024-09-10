@@ -11,8 +11,6 @@
 :root {
     --main-color: #ffffff;
     --text-color: #000000;
-    --seconed-color: #d13639;
-    --theard-color: #282828;
     --background-color: #fffff1;
     --box-shadow: rgba(0, 0, 0, 0.1)0px 5px 10px -3px;
     ;
@@ -50,7 +48,7 @@ a {
 }
 
 .header {
-    background-color: #fffff1;
+    background-color: var(--background-color);
     box-shadow: 0px -6px 9px black;
 }
 
@@ -87,7 +85,7 @@ a {
 }
 
 .btn-more {
-    background-color: #fffff1;
+    background-color: var(--background-color);
     margin-top: 20px;
     padding: 10px 5px;
     border: none;
@@ -134,12 +132,13 @@ a {
 }
 
 /*  Start Certifacte */
-.certfacite ,.projects {
+.certfacite,
+.projects {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.certfacite .container ,
+.certfacite .container,
 .projects .container {
     width: 90%;
     display: grid;
@@ -147,32 +146,36 @@ a {
     gap: 20px;
 }
 
-.certfacite .box ,
-.projects .box ,.project-box{
+.certfacite .box,
+.projects .box,
+.project-box {
     border-radius: 5px;
     width: 100%;
     padding: 10px 20px;
     box-shadow: var(--box-shadow);
 }
 
-.certfacite .box img  {
+.certfacite .box img {
     height: 100px;
     padding: 20px 0;
     max-width: 100%;
-  
+
 }
-.projects .project-box img { 
+
+.projects .project-box img {
     padding: 20px 0;
     max-width: 100%;
-    
+
 }
+
 .project-filter {
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid rgba(237,237,237,0.6);
+    border: 1px solid rgba(237, 237, 237, 0.6);
     margin: 20px;
 }
+
 .project-filter li {
     margin: 10px;
     padding: 5px 20px;
@@ -182,32 +185,37 @@ a {
     cursor: pointer;
     user-select: none;
 }
+
 .project-filter-active {
     border: 1px solid black;
-    background-color: #fffff1;
+    background-color: var(--background-color);
     border-radius: 6px;
 }
+
 .project-box i {
     margin-top: 10px;
     border: 1px soild #000000;
-    background-color: #fffff1;
+    background-color: var(--background-color);
 }
+
 .project-box button {
     padding: 5px 10px;
     margin: 10px 0;
     outline: none;
     border: none;
-    background-color: #fffff1;
+    background-color: var(--background-color);
     font-weight: 400;
     cursor: pointer;
     border-radius: 8px;
+    color: black;
 }
 
 @media (max-width:767px) {
     .project-filter li {
-padding: 5px 10px;
+        padding: 5px 10px;
     }
 }
+
 /* Start skills */
 .skills {
     width: 100%;
@@ -314,7 +322,7 @@ textarea {
 }
 
 .contact .email-side input[type=email],
-.contact .email-side input[type=text]{
+.contact .email-side input[type=text] {
     direction: ltr;
     width: 100%;
     padding: 12px 20px;
